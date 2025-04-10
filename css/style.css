@@ -1,0 +1,227 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.logo-container img {
+    height: 30px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #c5c5c5;
+    border-radius: 5px;
+}
+
+section.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 40px;
+    background-color: #ffffff;
+}
+
+.sobre .foto img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sobre .texto {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.sobre .texto h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #333;
+}
+
+.sobre .texto p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Section das tecnologias */
+section.tecnologias {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tec {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.tec h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tec p {
+    color: #555;
+    font-size: 14px;
+}
+
+
+.tec {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Rodapé fixo */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+    z-index: 999;
+}
+
+/* Evita sobreposição do rodapé com conteúdo */
+body {
+    padding-bottom: 60px;
+}
+
+
+/* Seção de Livros */
+section.livros {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section.livros h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.livros-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.livro {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.livro:hover {
+    transform: translateY(-5px);
+}
+
+.livro h3 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.livro p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Estilo mobile */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 8px;
+        width: 150px;
+    }
+
+    nav ul li {
+        float: none;
+        display: block;
+        text-align: right;
+        padding: 10px 0;
+    }
+
+    nav ul.hidden {
+        display: none;
+    }
+
+    nav ul:not(.hidden) {
+        display: flex;
+    }
+}
+
+

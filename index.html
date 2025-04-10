@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rafael Bernini</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/865a6f8d73.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Rafael Bernini</h1>
+    <nav>
+        <div class="logo-container">
+            <a href="http://rafaelbernini.github.io"><img id="logo" src="img/rb-logo.png" alt="Logo"></a>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fa-solid fa-book"></i>
+        </div>
+
+        <ul id="menu-list" class="hidden">
+            <li><a href="https://github.com/rafaelbernini"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href="https://rafaelbernini.com.br"><i class="fa-solid fa-blog"></i> Blog</a></li>
+            <li><a href="http://instagram.com/rafaelbernini"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+        </ul>
+    </nav>
+
+    <section class="sobre">
+        <div class="foto">
+            <img src="img/foto-pessoal.png" alt="Foto da Pessoa">
+        </div>
+        <div class="texto">
+            <h2>Sobre Mim</h2>
+            <p>
+                Sou formado como Tecnólogo em Análise e Desenvolvimento de Sistemas e possuo diversas especializações na área de tecnologia, incluindo: Arquitetura e Gestão de Infraestrutura, Computação em Nuvem, Tecnologia Java, Desenvolvimento de Aplicações Mobile, Tecnologias e Educação a Distância, além de um MBA Executivo em Segurança Cibernética. Atuo há mais de 20 anos no setor de tecnologia, com foco em Infraestrutura de Rede e Dados, sendo 2 desses anos dedicados à docência na área de Desenvolvimento de Sistemas.
+            </p>
+            
+
+        </div>
+    </section>
+    
+    <!-- Section das tecnologias -->
+    <section class="tecnologias">
+        <div class="tec html">
+            <h3>HTML</h3>
+            <p>Linguagem de marcação para estruturar páginas web.</p>
+        </div>
+        <div class="tec css">
+            <h3>CSS</h3>
+            <p>Responsável pelo estilo e layout das páginas.</p>
+        </div>
+        <div class="tec php">
+            <h3>PHP</h3>
+            <p>Linguagem de programação do lado do servidor.</p>
+        </div>
+        <div class="tec js">
+            <h3>JavaScript</h3>
+            <p>Linguagem de programação para interatividade e lógica no front-end.</p>
+        </div>
+        <div class="tec linux">
+            <h3>Linux</h3>
+            <p>Sistema operacional de código aberto amplamente usado em servidores e infraestrutura.</p>
+        </div>
+        <div class="tec infra">
+            <h3>Infraestrutura</h3>
+            <p>Gerenciamento de redes, servidores e sistemas para garantir estabilidade e segurança.</p>
+        </div>
+    </section>
+<!-- Seção de Leituras Atuais -->
+<section class="livros">
+    <h2>Leituras Atuais</h2>
+    <div class="livros-container">
+        <div class="livro">
+            <h3>O Mítico Homem-Mês</h3>
+            <p>Um clássico sobre engenharia de software, gestão de projetos e os desafios do desenvolvimento em equipe.</p>
+        </div>
+        <div class="livro">
+            <h3>O Programador Pragmático</h3>
+            <p>Um guia essencial para programadores que desejam melhorar suas habilidades, mentalidade e práticas de desenvolvimento.</p>
+        </div>
+        <div class="livro">
+            <h3>Abra a Cabeça: Design Patterns</h3>
+            <p>Uma abordagem divertida e visual para entender os padrões de projeto mais importantes na programação orientada a objetos.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Fixo-->
+    <footer>
+        <p>© 2025 Rafael Bernini. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const menuList = document.getElementById('menu-list');
+    
+        menuIcon.addEventListener('click', () => {
+            menuList.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
