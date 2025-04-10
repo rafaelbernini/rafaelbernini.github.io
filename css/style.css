@@ -211,7 +211,7 @@ section.livros h2 {
     nav ul li {
         float: none;
         display: block;
-        text-align: right;
+        text-align: left;
         padding: 10px 0;
     }
 
